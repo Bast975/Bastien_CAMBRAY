@@ -1,12 +1,17 @@
-.container-fluid{
+ /* .container-fluid{
         padding-top: 50px;
         border-width:1px;
         border-style:dotted;
         border-color:white;
-}
+}  */
 
-.container{
+ .container-darkmode{
         border-width:1px;
-        border-style:dotted;
+        border-style:double;
         border-color:white;
-}
+} 
+.container-lightmode{
+        border-width:1px;
+        border-style:double;
+        border-color:black;
+} 
