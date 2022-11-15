@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-
-import "./Header.css";
+import "../main.css";
 import imgBastien from '../images/Bastien.jpg';
 import imgSPM from '../images/spm.jpg';
 import imgMTL from '../images/MTL.jpg';
@@ -12,22 +11,23 @@ import { ModeContext } from '../App';
 
 function Home() {
   const modecontext = useContext(ModeContext)
-  const [containertheme, setContainertheme] = useState('container-darkmode text-center');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     if (modecontext.mode === "dark") {
-      setContainertheme('container-darkmode text-center')
+      setTheme('dark')
     } 
     if (modecontext.mode === "light") {
-      setContainertheme('container-lightmode text-center')
+      setTheme('light')
     }
    }, [modecontext])
 
 
   return <div className="home-container">
-    <p className="fs-1">
-      Biographie
-    </p>
+    <br />
+   <div className="section-title">
+        <h2>Biographie</h2>
+      </div>
     <p className="fs-4">
     Ci-dessous se trouve une brève biographie de moi, j'ai décidé d'être le plus transparent possible et de la séparer en plusieurs parties en fonction d'années qui selon moi ont été importantes, m'ont fait évoluer et devenir la personne que je suis aujourd'hui.    </p>
     <nav className="nav nav-masthead justify-content-center float-md">
@@ -36,7 +36,7 @@ function Home() {
         <a className="nav-link fw-bold py-1 px-0" href="#2019-2020"> 2019-2020</a>
         <a className="nav-link fw-bold py-1 px-0" href="#2020-2023"> 2020-2023</a>
       </nav>
-    <div className={containertheme} id="2001-2016">
+    <div className={`container-${theme} text-center`} id="2001-2016">
       <p className="fs-3">
         2001-2016
       </p>
@@ -56,7 +56,8 @@ function Home() {
         </div>
       </div>
     </div>
-    <div className={containertheme} id="2016-2019">
+    <br />
+    <div className={`container-${theme} text-center`} id="2016-2019">
       <p className="fs-3">
         2016-2019
       </p>
@@ -73,7 +74,8 @@ function Home() {
         </div>
       </div>
     </div>
-    <div className={containertheme} id="2019-2020">
+    <br />
+    <div className={`container-${theme} text-center`} id="2019-2020">
       <p className="fs-3">
         2019-2020
       </p>
@@ -96,7 +98,8 @@ function Home() {
         </div>
       </div>
     </div>
-    <div className={containertheme} id="2020-2023">
+    <br />
+    <div className={`container-${theme} text-center`} id="2020-2023">
       <p className="fs-3">
         2020-2023
       </p>

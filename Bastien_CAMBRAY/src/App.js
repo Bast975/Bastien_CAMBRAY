@@ -6,7 +6,7 @@ import Projects from './Components/Projects/Projects';
 import Blog from './Components/Blog/Blog';
 import NoMatch from './Components/NoMatch';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css";
+import "./main.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const ModeContext = React.createContext();
@@ -27,7 +27,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/CV" element={<CV />} />
-              <Route path="/Projects" element={<Projects />} />
+              <Route path="/Projec ts" element={<Projects />} />
               <Route path="/Blog" element={<Blog />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>

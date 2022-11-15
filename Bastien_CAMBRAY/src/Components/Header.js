@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext, useState, useEffect } from "react";
-import "./Header.css";
+import "../main.css";
 // import imgHeader from '../images/header.jpg';
 import { Link } from "react-router-dom";
 import { ModeContext } from '../App';
@@ -53,7 +53,7 @@ function Header() {
       <Link to="/Projects" activeclassname="nav-link fw-bold py-1 px-0 active" className="nav-link fw-bold py-1 px-0">Projects</Link>
       <Link to="/Blog" activeclassname="nav-link fw-bold py-1 px-0 active" className="nav-link fw-bold py-1 px-0">Blog</Link>
       <a className="btn btn-sm btn-outline-secondary" onClick={ChangeLangage} style={{margin: "5px"}}> {langageacro}</a>
-      <a className="btn btn-sm btn-outline-secondary" onClick={ChangeMode} style={{margin: "5px"}}> <i class={modeclass}></i></a>
+      <a className="btn btn-sm btn-outline-secondary" onClick={ChangeMode} style={{margin: "5px"}}> <i className={modeclass}></i></a>
     </nav>
   </div>
 }
