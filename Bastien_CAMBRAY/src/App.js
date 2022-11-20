@@ -2,9 +2,10 @@ import React, { useState} from "react";
 import Header from './Components/Header';
 import Home from './Components/Home';
 import CV from './Components/CV';
-import Projects from './Components/Projects/Projects';
-import Blog from './Components/Blog/Blog';
+import Projects from './Components/Projects';
+import Blog from './Components/Blog';
 import NoMatch from './Components/NoMatch';
+import ProjectsDetails from './Components/ProjectsDetails/ProjectsDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./main.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -27,8 +28,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/CV" element={<CV />} />
-              <Route path="/Projec ts" element={<Projects />} />
+              <Route path="/Projects" element={<Projects />} />
               <Route path="/Blog" element={<Blog />} />
+              <Route path="/Projectsdetails" element={<ProjectsDetails />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>

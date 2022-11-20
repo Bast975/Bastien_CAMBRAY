@@ -1,63 +1,92 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../main.css";
+import { ModeContext } from '../App';
 
-function CV(){
-    return <section id="resume" className="resume">
+function CV() {
+  const modecontext = useContext(ModeContext)
+
+  return <section id="resume" className="resume">
     <div className="container">
       <br />
-      <div className="section-title">
-        <h2>Resume</h2>
+      <div className={`section-title-${modecontext.mode}`}>
+        <h2>CV</h2>
       </div>
       <div className="row">
         <div className="col-lg-6">
-          <h3 className="resume-title">Sumary</h3>
+          <h3 className="resume-title">Sommaire</h3>
           <div className="resume-item pb-0">
-            <h4>Alice Barkley</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+            <h4>Bastien CAMBRAY</h4>
+            <p><em>Étudiant en DEC Technique - développement d'applications.</em></p>
             <ul>
-              <li>Portland par 127,Orlando, FL</li>
-              <li>(123) 456-7891</li>
-              <li>alice.barkley@example.com</li>
+              <li>Français, Anglais</li>
+              <li>Montréal, QC, Canada</li>
+              <li>bastiencambray975@gmail.com</li>
             </ul>
           </div>
-
-          <h3 className="resume-title">Education</h3>
+          <h3 className="resume-title">Éducation</h3>
           <div className="resume-item">
-            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-            <h5>2015 - 2016</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            <h4>DEC informatique - développement d'applications</h4>
+            <h5>08/2020 - 05/2023</h5>
+            <p><em>Collège de Maisonneuve , Montréal, Québec, Canada</em></p>
+            <p></p>
           </div>
           <div className="resume-item">
-            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-            <h5>2010 - 2014</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            <h4>Baccalauréat professionnel - Système Numérique</h4>
+            <h5>09/2016 - 07/2019</h5>
+            <p><em>Lycée d’État Émile Letournel , Saint-Pierre et Miquelon, France </em></p>
+            <p></p>
+          </div>
+          <h3 className="resume-title"> Expériences de travail </h3>
+          <div className="resume-item">
+            <h4>Chauffeur - Livreur</h4>
+            <h5>01/2020 - 07/2020 </h5> <h5> 05/2021 - 08/2021 </h5> <h5> 07/2022 - 08/2022</h5>
+            <p><em>Entreprise Cambray et fils, Saint-Pierre et Miquelon, France</em></p>
+            <p>Livraison - Déménagement - Conduites de camionnettes chargées - Planification des livraisons</p>
+          </div>
+          <div className="resume-item">
+            <h4>Agent de stock</h4>
+            <h5>05/2022 - 06/2022</h5>
+            <p><em>Vélo Québec, Montréal, Québec, Canada</em></p>
+            <p>Préparations de commandes - Déménagement d'entrepôt - Chargement et conduites de camions</p>
+          </div>
+          <div className="resume-item">
+            <h4>Bâtiment et travaux publics (Foreur / Dynamiteur) </h4>
+            <h5>07/2018 - 09/2018</h5> <h5>06/2019 - 12/2019</h5>
+            <p><em>GIE , Saint-Pierre et Miquelon, France</em></p>
+            <p>Utilisation de foreuse - Préparation de tire de mine - Assistance au tir de dynamite</p>
           </div>
         </div>
         <div className="col-lg-6">
-          <h3 className="resume-title">Professional Experience</h3>
+          <h3 className="resume-title">Compétences</h3>
           <div className="resume-item">
-            <h4>Senior graphic design specialist</h4>
-            <h5>2019 - Present</h5>
-            <p><em>Experion, New York, NY </em></p>
-            <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-              <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-            </ul>
+            <h4>DEV</h4>
+            <p>HTML - CSS - JavaScript - SQL - Python - Java - GIT - Trello - Vue.js - API - REST - Swagger - Node.js - Express - No-SQL - Kotlin - React - Bulma - Bootstrap </p>
           </div>
           <div className="resume-item">
-            <h4>Graphic design specialist</h4>
-            <h5>2017 - 2018</h5>
-            <p><em>Stepping Stone Advertising, New York, NY</em></p>
-            <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-            </ul>
+            <h4>Générales</h4>
+            <p>Dynamique – Sérieux – Ponctuel – Motivé – Enthousiaste - Amical</p>
+          </div>
+          <h3 className="resume-title"> Expériences professionnelles </h3>
+          <div className="resume-item">
+            <h4>Stage développement d'applications</h4>
+            <h5>03/2019</h5>
+            <p><em>DGAC, Saint-Pierre et Miquelon, France</em></p>
+            <p>Création d’une base de données Microsoft Access avec une interface graphique</p>
+          </div>
+          <div className="resume-item">
+            <h4> Stage technicien informatique</h4>
+            <h5>11/2017</h5> <h5>10/2018</h5>
+            <p><em>DGAC, Saint-Pierre et Miquelon, France</em></p>
+            <p>Configuration de TV pour mises en vente et iPad pour entreprise. Installation et démontage d’ordinateurs. Réparation de divers matériels </p>
+          </div>
+          <h3 className="resume-title"> Personelles </h3>
+          <div className="resume-item">
+            <h4>intérêts</h4>
+            <p>Nouvelles technologies (Blockchain, WEB 3.0) - Sports (Calisthénie, Musculation, Gymnastique) - Investissements - Développement personnel - Musiques - DC Comics - Voyages </p>
+          </div>
+          <div className="resume-item">
+            <h4> Projets futurs</h4>
+            <p>Site web (perso) - Application mobile (Calisthénie) - Formation développement (Blockchain) - Formation coaching (Calisthénie)</p>
           </div>
         </div>
       </div>
