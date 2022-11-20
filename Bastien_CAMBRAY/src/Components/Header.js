@@ -5,11 +5,9 @@ import "../main.css";
 import { Link } from "react-router-dom";
 import { ModeContext } from '../App';
 
-
-function Header() {
-  const modecontext = useContext(ModeContext)
+function Header(props) {
+  const modecontext = useContext(ModeContext);
   const [modeclass, setModeclass] = useState('bi bi-moon-stars');
-  const [langage, setLangage] = useState('Français');
   const [langageacro, setLangageacro] = useState('FR');
 
   function ChangeMode() {
@@ -21,12 +19,22 @@ function Header() {
   }
 
   function ChangeLangage() {
-    if (langage === "Français") {
-      setLangage("English")
-    } if (langage === "English") {
-      setLangage("Français")
+    if (langageacro === "FR") {
+      setLangageacro("EN")
+      props.handleSetLanguage("Français")
+    } if (langageacro === "EN") {
+      setLangageacro("FR")
+      props.handleSetLanguage("English")
     }
   }
+
+  useEffect(() => {
+    if (localStorage.getItem("language") === "Français"){
+      setLangageacro("EN")
+    } if (localStorage.getItem("language") === "English") {
+      setLangageacro("FR")
+    }
+  }, [])
 
   useEffect(() => {
     if (modecontext.mode === "dark") {
@@ -37,13 +45,7 @@ function Header() {
     }
    }, [modecontext])
 
-   useEffect(() => {
-    if (langage === "Français") {
-      setLangageacro("FR")
-    } if (langage === "English") {
-      setLangageacro("EN")
-    }
-   }, [langage])
+
 
   return <div>
     <h3 className="float-md-start mb-0"> Bastien CAMBRAY </h3>
