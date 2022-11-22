@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import "../../main.css";
-import { ModeContext } from '../../App';
-import vidTP1 from '../../images/portfolio/streetworkout.mp4'
+import "../main.css";
+import { ModeContext } from '../App';
+import vidTP1 from '../images/portfolio/streetworkout.mp4'
 import { Link } from "react-router-dom";
 
 
-function ProjectsDetails() {
-  const modecontext = useContext(ModeContext)
+function ProjectsDetails(props) {
+  console.log(props)
 
   return <div>
     <div id="portfolio-details" className="portfolio-details">
@@ -14,9 +14,8 @@ function ProjectsDetails() {
 
         <div className="row">
         <div>
-              <h2 className="float-md-start mb-0 portfolio-title">Comics Mobile App</h2>
+              {/* <h2 className="float-md-start mb-0 portfolio-title">{props.project.title}</h2> */}
               <Link to="/Projects" title="Projects" className="portfolio-links justify-content-center float-md-end"><i className="bi bi-arrows-angle-contract"></i></Link>
-
             </div>
           <div className="col-lg-8">
             <div>
@@ -31,9 +30,9 @@ function ProjectsDetails() {
           <div className="col-lg-4 portfolio-info">
             <br />
             <ul>
-              <li><strong>Category</strong> : Application Mobile</li>
-              <li><strong>Technologie</strong> : Android studio (Kotlin), API (JSON)</li>
-              <li><strong>Date</strong> : 01 March, 2020</li>
+              {/* <li><strong>Category</strong> : {props.project.category.map((p) => p.name).join(" , ")}</li>
+              <li><strong>Technologie</strong> : {props.project.technologie.map((p) => p.name).join(" , ")}</li>
+              <li><strong>Date</strong> : {props.project.date} </li> */}
             </ul>
             <p>
               <strong>Description</strong> : Application mobile créé sur Android Studio avec le language Kotlin, fonctionnant avec une API. Cette API retournait un token à l'authentification, tous les comics sur une requête et d'autres requêtes permettant d'ajouter / supprimer des favoris.

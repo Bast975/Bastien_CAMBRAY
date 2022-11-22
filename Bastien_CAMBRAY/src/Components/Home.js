@@ -12,10 +12,9 @@ function Home(props) {
   const modecontext = useContext(ModeContext)
 
   let content = {
-
     English: {
       title: "Below you will find a brief biography of me, I decided to be as transparent as possible and to separate it into several parts according to years that I believe were important, made me evolve and become the person I am today.",
-      p1: "Bastien CAMBRAY, born on December 24, 2001 in Saint-Pierre and Miquelon, a small French island of approximately 6,000 inhabitants. In this period of my childhood, I was a rather introverted young \"geek\" who spent his time on video games and computer. I hated school and wanted to stop in college when I was 14. Fortunately for me, my parents dissuaded me from this idea.",
+      p1: "Bastien CAMBRAY, born on December 24, 2001 in Saint-Pierre and Miquelon, a small French island of approximately 6,000 habitants. In this period of my childhood, I was a rather introverted young \"geek\" who spent his time on video games and computer. I hated school and wanted to stop in college when I was 14. Fortunately for me, my parents dissuaded me from this idea.",
       p2: "Still in Saint-Pierre, having been passionate about computer science for years, I decided to do a Professional Baccalaureate - Digital System. During this period I started to become more outgoing, I started going out often, met a lot of people and had unforgettable moments with my friends.",
       p3: {
         part1: "So I stayed in Saint-Pierre working for 6 months in construction / public works (blasting) and 6 months as a delivery man / driver with my brother. This year was totally unproductive, I abused outings and had no goals, then COVID happened.",
@@ -132,7 +131,6 @@ function Home(props) {
             <p className="fs-4">
             {content.p4.part2}
             </p>
-            <p></p>
           </div>
           <div className="col">
             <img width="380" src={imgMTL} alt="MTL" className="rounded mx-auto d-block"></img>

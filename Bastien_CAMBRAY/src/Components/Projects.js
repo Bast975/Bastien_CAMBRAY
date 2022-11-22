@@ -6,12 +6,55 @@ import "../main.css";
 import imgBd from '../images/portfolio/bdKotlin.jpg'
 import { Link } from "react-router-dom";
 import { ModeContext } from '../App';
-
+import vidTP1 from '../images/portfolio/streetworkout.mp4'
+import ProjectCard from "./ProjectCard";
 
 function Projects() {
     const modecontext = useContext(ModeContext)
+    let Projects = [
+            {
+            id: 1,
+            title: "Comics Mobile APP",
+            category: [
+                {
+                  name: "Mobile"
+                }
+            ],
+            technologie: [
+                {
+                    name: "Android studio (Kotlin)"
+                },
+                {
+                    name: "API (JSON)"
+                }
+            ],
+            date: "21 November 2022",
+            desc: "Application mobile créé sur Android Studio avec le language Kotlin, fonctionnant avec une API. Cette API retournait un token à l'authentification, tous les comics sur une requête et d'autres requêtes permettant d'ajouter / supprimer des favoris.",
+            video: vidTP1
+          },
+          {
+            id: 2,
+            title: "Comics Mobile APP",
+            category: [
+                {
+                  name: "Mobile"
+                }
+            ],
+            technologie: [
+                {
+                    name: "Android studio (Kotlin)"
+                },
+                {
+                    name: "API (JSON)"
+                }
+            ],
+            date: "21 November 2022",
+            desc: "Application mobile créé sur Android Studio avec le language Kotlin, fonctionnant avec une API. Cette API retournait un token à l'authentification, tous les comics sur une requête et d'autres requêtes permettant d'ajouter / supprimer des favoris.",
+            video: vidTP1
+          }
+        ]
 
-    return <section id="portfolio" class="portfolio">
+    return <section id="portfolio" className="portfolio">
         <br />
          <div className={`section-title-${modecontext.mode}`}>
         <h2>Projects</h2>
@@ -20,18 +63,12 @@ function Projects() {
         <div className="home-container">
             <div className="container">
                 <div className="row portfolio-container">
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div className="portfolio-wrap">
-                            <img src={imgBd} className="img-fluid" alt="" />
-                            <div className="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div className="portfolio-links">
-                                    <Link to="/Projectsdetails" title="Details"><i className="bi bi-arrows-fullscreen"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                {
+            Projects.map((project) => {
+              return <ProjectCard project={project}
+                              key={project.id}/>
+            })
+          }
                 </div>
             </div>
         </div>
