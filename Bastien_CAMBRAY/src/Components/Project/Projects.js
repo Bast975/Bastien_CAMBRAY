@@ -8,51 +8,11 @@ import { Link } from "react-router-dom";
 import { ModeContext } from '../../App';
 import vidTP1 from '../../images/portfolio/streetworkout.mp4'
 import ProjectCard from "./ProjectCard";
+import { projectData } from "./data";
 
 function Projects() {
     const modecontext = useContext(ModeContext)
-    let Projects = [
-            {
-            id: 1,
-            title: "Comics Mobile APP",
-            category: [
-                {
-                  name: "Mobile"
-                }
-            ],
-            technologie: [
-                {
-                    name: "Android studio (Kotlin)"
-                },
-                {
-                    name: "API (JSON)"
-                }
-            ],
-            date: "21 November 2022",
-            desc: "Application mobile créé sur Android Studio avec le language Kotlin, fonctionnant avec une API. Cette API retournait un token à l'authentification, tous les comics sur une requête et d'autres requêtes permettant d'ajouter / supprimer des favoris.",
-            video: vidTP1
-          },
-          {
-            id: 2,
-            title: "Comics Mobile APP",
-            category: [
-                {
-                  name: "Mobile"
-                }
-            ],
-            technologie: [
-                {
-                    name: "Android studio (Kotlin)"
-                },
-                {
-                    name: "API (JSON)"
-                }
-            ],
-            date: "21 November 2022",
-            desc: "Application mobile créé sur Android Studio avec le language Kotlin, fonctionnant avec une API. Cette API retournait un token à l'authentification, tous les comics sur une requête et d'autres requêtes permettant d'ajouter / supprimer des favoris.",
-            video: vidTP1
-          }
-        ]
+
     
     return <section id="portfolio" className="portfolio">
         <br />
@@ -64,7 +24,7 @@ function Projects() {
             <div className="container">
                 <div className="row portfolio-container">
                 {
-            Projects.map((project) => {
+            projectData.map((project) => {
               return <ProjectCard project={project}
                               key={project.id}/>
             })

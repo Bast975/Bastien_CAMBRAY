@@ -3,7 +3,7 @@ import "../../main.css";
 import { ModeContext } from '../../App';
 import vidTP1 from '../../images/portfolio/streetworkout.mp4'
 import { Link } from "react-router-dom";
-
+import { projectData } from './data'
 
 function ProjectDetails(props) {
   console.log(props)

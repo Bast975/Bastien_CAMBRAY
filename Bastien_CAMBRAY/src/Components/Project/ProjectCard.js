@@ -19,7 +19,7 @@ function ProjectCard(props) {
                 <h4>{props.project.title}</h4>
                 <p>{props.project.category.map((c) => c.name).join(" , ")}</p>
                 <div className="portfolio-links">
-                    <Link to="/Projectsdetails" project={props.project} title="Details"><i className="bi bi-arrows-fullscreen"></i></Link>
+                    <Link to="/Projectsdetails" title="Details"><i className="bi bi-arrows-fullscreen"></i></Link>
                 </div>
             </div>
         </div>
