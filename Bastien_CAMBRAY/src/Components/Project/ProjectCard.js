@@ -9,20 +9,17 @@ import { ModeContext } from '../../App';
 
 
 function ProjectCard(props) {
-    const modecontext = useContext(ModeContext)
-    let p = props.project
-    console.log(p)
-    
-
+    // const modecontext = useContext(ModeContext)
+    console.log(`props.project: ${JSON.stringify(props.project)}`)
 
     return <div className="col-lg-4 col-md-6 portfolio-item filter-app">
         <div className="portfolio-wrap">
             <img src={imgBd} className="img-fluid" alt="" />
             <div className="portfolio-info">
-                <h4>{p.title}</h4>
-                <p>{p.category.map((p) => p.name).join(" , ")}</p>
+                <h4>{props.project.title}</h4>
+                <p>{props.project.category.map((c) => c.name).join(" , ")}</p>
                 <div className="portfolio-links">
-                    <Link to="/Projectsdetails" title="Details"><i className="bi bi-arrows-fullscreen"></i></Link>
+                    <Link to="/Projectsdetails" project={props.project} title="Details"><i className="bi bi-arrows-fullscreen"></i></Link>
                 </div>
             </div>
         </div>
