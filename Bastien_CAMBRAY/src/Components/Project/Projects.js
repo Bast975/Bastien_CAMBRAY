@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import "../main.css";
+import "../../main.css";
 // import imgTv from '../images/portfolio/TVshowsKotlin.jpg'
 // import imgMeteo from '../images/portfolio/meteoKotlin.jpg'
 // import imgAlbums from '../images/portfolio/albumsKotlin.jpg'
-import imgBd from '../images/portfolio/bdKotlin.jpg'
+import imgBd from '../../images/portfolio/bdKotlin.jpg'
 import { Link } from "react-router-dom";
-import { ModeContext } from '../App';
-import vidTP1 from '../images/portfolio/streetworkout.mp4'
+import { ModeContext } from '../../App';
+import vidTP1 from '../../images/portfolio/streetworkout.mp4'
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -53,7 +53,7 @@ function Projects() {
             video: vidTP1
           }
         ]
-
+    
     return <section id="portfolio" className="portfolio">
         <br />
          <div className={`section-title-${modecontext.mode}`}>

@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import "../main.css";
-import { ModeContext } from '../App';
-import vidTP1 from '../images/portfolio/streetworkout.mp4'
+import "../../main.css";
+import { ModeContext } from '../../App';
+import vidTP1 from '../../images/portfolio/streetworkout.mp4'
 import { Link } from "react-router-dom";
 
 
-function ProjectsDetails(props) {
+function ProjectDetails(props) {
   console.log(props)
 
   return <div>
@@ -15,7 +15,7 @@ function ProjectsDetails(props) {
         <div className="row">
         <div>
               {/* <h2 className="float-md-start mb-0 portfolio-title">{props.project.title}</h2> */}
-              <Link to="/Projects" title="Projects" className="portfolio-links justify-content-center float-md-end"><i className="bi bi-arrows-angle-contract"></i></Link>
+              <Link to="/Projects" title="Projects" className="portfolio-links justify-content-center float-md-end"  style={{textDecoration: "none", color:"white"}}><i className="bi bi-arrows-angle-contract"></i></Link>
             </div>
           <div className="col-lg-8">
             <div>
@@ -46,4 +46,4 @@ function ProjectsDetails(props) {
 
 }
 
-export default ProjectsDetails;
+export default ProjectDetails;
