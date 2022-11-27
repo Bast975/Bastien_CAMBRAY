@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext, useState, useEffect } from "react";
-import "../main.css";
-// import imgHeader from '../images/header.jpg';
+import "../dark.css";
+import "../light.css";
 import { Link } from "react-router-dom";
 import { ModeContext } from '../App';
 

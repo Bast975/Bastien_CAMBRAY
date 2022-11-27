@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
-import "../../main.css";
-import { ModeContext } from '../../App';
+import React from "react";
+import "../../dark.css";
+import "../../light.css";
+// import { ModeContext } from '../../App';
 
 
 function Blogpost(props) {
-    const modecontext = useContext(ModeContext)
+    // const modecontext = useContext(ModeContext)
 
     return <div className="container mt-5 text-center">
         <div className="row justify-content-center">

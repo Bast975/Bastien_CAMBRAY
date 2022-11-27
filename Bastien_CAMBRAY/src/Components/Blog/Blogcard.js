@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import "../../main.css";
+import React, { useContext, useState, useEffect } from "react";
+import "../../dark.css";
+import "../../light.css";
 import { ModeContext } from '../../App';
 import { Link } from "react-router-dom";
 
@@ -7,11 +8,20 @@ import { Link } from "react-router-dom";
 function Blog(props) {
     const modecontext = useContext(ModeContext)
     let b = props.blog
+    const [color, setColor] = useState('dark');
 
+    useEffect(() => {
+        if (modecontext.mode === "dark") {
+            setColor('light')
+        } 
+        if (modecontext.mode === "light") {
+            setColor('dark')
+        }
+       }, [modecontext])
 
     return <div className="col-md-6">
-        <Link to="/Blogpost" title={b.title} style={{textDecoration: "none", color:"white"}}>
-            <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <Link to="/Blogpost" className={`blog-card-${modecontext.mode}`}>
+            <div className={`row g-0 border border-${color} rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative`}>
                 <div className="col p-4 d-flex flex-column position-static">
                     <strong className="d-inline-block mb-2 text-primary">{b.theme}</strong>
                     <h3 className="mb-0">{b.title}</h3>

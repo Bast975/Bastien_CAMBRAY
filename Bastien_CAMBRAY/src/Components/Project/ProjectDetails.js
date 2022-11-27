@@ -1,5 +1,6 @@
 import React from "react";
-import "../../main.css";
+import "../../dark.css";
+import "../../light.css";
 import { Link } from "react-router-dom";
 import { projectDetailsData } from './DataProject'
 import { useParams } from "react-router-dom";
@@ -17,7 +18,7 @@ function ProjectDetails(props) {
   let data = details[id]
 
   return <div>
-    <div id="portfolio-details" className="portfolio-details">
+    <div id={`portfolio-details`} className={`portfolio-details`}>
       <div className="container">
 
         <div className="row">

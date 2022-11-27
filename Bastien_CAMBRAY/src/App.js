@@ -7,8 +7,11 @@ import Blog from './Components/Blog/Blog';
 import Blogpost from './Components/Blog/Blogpost';
 import NoMatch from './Components/NoMatch';
 import ProjectDetails from './Components/Project/ProjectDetails';
+import Footer from './Components/Footer';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./main.css";
+import "./dark.css";
+import "./light.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const ModeContext = React.createContext();
@@ -45,10 +48,12 @@ function App() {
                 <Route path="*" element={<NoMatch />} />
               </Routes>
             </div>
+            <Footer />
           </BrowserRouter>
         </div>
       </div>
     </ModeContext.Provider>
+
   );
 }
 

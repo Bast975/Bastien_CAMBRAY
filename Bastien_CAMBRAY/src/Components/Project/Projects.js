@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import "../../main.css";
+import "../../dark.css";
+import "../../light.css";
 import { ModeContext } from '../../App';
 import ProjectCard from "./ProjectCard";
 import { projectData } from "./DataProject";

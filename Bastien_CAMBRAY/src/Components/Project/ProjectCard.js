@@ -1,5 +1,6 @@
 import React from "react";
-import "../../main.css";
+import "../../dark.css";
+import "../../light.css";
 import { Link } from "react-router-dom";
 
 
