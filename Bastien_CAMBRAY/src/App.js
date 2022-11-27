@@ -41,7 +41,7 @@ function App() {
                 <Route path="/Projects" element={<Projects language={language}/>} />
                 <Route path="/Blog" element={<Blog language={language}/>} />
                 <Route path="/Blogpost" element={<Blogpost language={language}/>} />
-                <Route path="/Projectsdetails" element={<ProjectDetails language={language}/>} />
+                <Route path="/Project/details/:id" element={<ProjectDetails language={language}/>} />
                 <Route path="*" element={<NoMatch />} />
               </Routes>
             </div>
