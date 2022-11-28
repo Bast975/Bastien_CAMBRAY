@@ -27,31 +27,31 @@ function App() {
 
   return (
     <ModeContext.Provider value={objetsEtMethodesDuContexte}>
-      <div className={`d-flex h-100 text-center text-bg-${mode}`}>
-        <div className="container-md d-flex w-100 h-100 p-3 mx-auto flex-column">
-          <BrowserRouter>
-            <header className="mb-auto">
-              <Header language={language}
-                handleSetLanguage={language => {
-                  setLanguage(language);
-                  storeLanguageInLocalStorage(language);
-                }} />
-            </header>
-            <div className="container-fluid">
-              <Routes>
-                <Route path="/" element={<Home language={language} />} />
-                <Route path="/CV" element={<CV language={language} />} />
-                <Route path="/Projects" element={<Projects language={language}/>} />
-                <Route path="/Blog" element={<Blog language={language}/>} />
-                <Route path="/Blogpost" element={<Blogpost language={language}/>} />
-                <Route path="/Project/details/:id" element={<ProjectDetails language={language}/>} />
-                <Route path="*" element={<NoMatch />} />
-              </Routes>
+      <BrowserRouter>
+          <div className={`d-flex h-100 text-center text-bg-${mode}`}>
+            <div className="container-md d-flex w-100 h-100 p-3 mx-auto flex-column">
+              <header className="mb-auto">
+                <Header language={language}
+                  handleSetLanguage={language => {
+                    setLanguage(language);
+                    storeLanguageInLocalStorage(language);
+                  }} />
+              </header>
+              <div className="container-fluid">
+                <Routes>
+                  <Route path="/" element={<Home language={language} />} />
+                  <Route path="/CV" element={<CV language={language} />} />
+                  <Route path="/Projects" element={<Projects language={language} />} />
+                  <Route path="/Blog" element={<Blog language={language} />} />
+                  <Route path="/Blogpost" element={<Blogpost language={language} />} />
+                  <Route path="/Project/details/:id" element={<ProjectDetails language={language} />} />
+                  <Route path="*" element={<NoMatch />} />
+                </Routes>
+              </div>
+              <Footer />
             </div>
-            <Footer />
-          </BrowserRouter>
-        </div>
-      </div>
+          </div>
+      </BrowserRouter>
     </ModeContext.Provider>
 
   );

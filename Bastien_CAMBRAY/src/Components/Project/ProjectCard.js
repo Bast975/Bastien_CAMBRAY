@@ -11,7 +11,7 @@ function ProjectCard(props) {
             <img src={props.project.img} className="img-fluid" alt="" />
             <div className="portfolio-info">
                 <h4>{props.project.title}</h4>
-                <p>{props.project.category.map((c) => c.name).join(" , ")}</p>
+                <p>{props.project.technologie.map((t) => t.name).join(", ")}</p>
                 <div className="portfolio-links">
                 </div>
             </div>

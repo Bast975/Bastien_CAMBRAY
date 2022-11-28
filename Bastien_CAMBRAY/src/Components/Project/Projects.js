@@ -7,27 +7,47 @@ import { projectData } from "./DataProject";
 
 function Projects() {
     const modecontext = useContext(ModeContext)
-
-    
+    console.log(projectData.Mobile)
     return <section id="portfolio" className="portfolio">
         <br />
-         <div className={`section-title-${modecontext.mode}`}>
-        <h2>Projects</h2>
-        <br />
+        <div className={`section-title-${modecontext.mode}`}>
+            <h2>Projects</h2>
+            <br />
         </div>
-        <div className="home-container">
-            <div className="container">
-                <div className="row portfolio-container">
+        <nav className={`nav nav-masthead-${modecontext.mode} justify-content-center float-md`}>
+            <a className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} href="#WEB"> WEB</a>
+            <a className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} href="#MOBILE"> MOBILE</a>
+        </nav>
+        <br />
+        <div className={`container-${modecontext.mode}`} id="WEB">
+            <h5>
+                WEB
+            </h5>
+            <div className="row portfolio-container">
                 {
-            projectData.map((project) => {
-              return <ProjectCard project={project}
-                              key={project.id}/>
-            })
-          }
-                </div>
+                    projectData.Web.map((project) => {
+                        return <ProjectCard project={project}
+                            key={project.id} />
+                    })
+                }
             </div>
         </div>
-    </section>
+        <br />
+        <div className={`container-${modecontext.mode}`} id="MOBILE">
+            <h5>
+                MOBILE
+            </h5>
+            <div className="row portfolio-container">
+                {
+                    projectData.Mobile.map((project) => {
+                        return <ProjectCard project={project}
+                            key={project.id} />
+                    })
+                }
+            </div>
+        </div>
+       
+    </section >
 }
 
 export default Projects;

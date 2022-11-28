@@ -39,8 +39,8 @@ function ProjectDetails(props) {
           <div className="col-lg-4 portfolio-info">
             <br />
             <ul>
-              <li><strong>Category</strong> : {data.category.map((c) => c.name).join(" , ")}</li>
-              <li><strong>Technologie</strong> : {data.technologie.map((t) => t.name).join(" , ")}</li>
+              <li><strong>Category</strong> : {data.category.map((c) => c.name).join(", ")}</li>
+              <li><strong>Technologie</strong> : {data.technologie.map((t) => t.name).join(", ")}</li>
               <li><strong>Date</strong> : {data.date} </li>
             </ul>
             <p>
