@@ -106,7 +106,7 @@ export let projectDetailsData = {
                     name: "API (JSON)"
                 }
             ],
-            date: "21 November 2022",
+            date: "18 October 2022",
             desc: "Mobile application created on Android Studio with the Kotlin language, working with an API given by a teacher. This API returned a token on authentication, all comics on a request, and other requests to add/remove favorites.",
             video: vidComics
         },
@@ -131,12 +131,12 @@ export let projectDetailsData = {
                     name: "Firebase"
                 }
             ],
-            date: "21 November 2022",
+            date: "18 December 2022",
             desc: "Mobile application created during a project course (team of 5) on Android Studio with the Kotlin language. This application has many features: A connection as a Coach and the ability to create, delete, update workout plans with information specific to it. A login / registration as a user, forgotten password, subscription / unsubscription to a training plan and the possibility of seeing the details of it and keeping track of each 'daily workout', a calories calculator depending on a given food and weight and other many features. All this works with a backend that I made the major part, firebase is also used to store all the images and gif of the app",
             video: vidComics
         },
         3: {
-            title: "Personnal Website",
+            title: "Professionnal Website",
             category: [
                 {
                     name: "WEB"
@@ -150,8 +150,8 @@ export let projectDetailsData = {
                     name: "Bootstrap"
                 }
             ],
-            date: "28 November 2022",
-            desc: "Website created with React after learnings the basics at school, I wanted to have a profesionnal website and in the same time improve my skills. I used and learn Bootstrapt for the first time doing this website. The website was realy focus on the content and features using react, I could have done a better css and add other features but I had to focus my times on finishing my school session and wanted to have my website done to send internships requests.",
+            date: "1 December 2022",
+            desc: "Website created with React after learnings the basics at school, I wanted to have a profesionnal website and in the same time improve my skills. I used and learn Bootstrap for the first time doing this website. The website was realy focus on the content and features using react, I could have done a better css and add other features but I had to focus my times on finishing my school session and wanted to have my website done to send internships requests.",
             video: vidPersonalWebsite
         },
          4: {
@@ -175,7 +175,7 @@ export let projectDetailsData = {
                     name: "API (JSON)"
                 }
             ],
-            date: "28 November 2022",
+            date: "22 November 2022",
             desc: "Website created with React, the API was given by the teacher, the goal was to learn many features of react. We also have done the same website in Vue.js few sessions ago.",
             video: vidPokemons
         },
@@ -196,7 +196,7 @@ export let projectDetailsData = {
                     name: "API (JSON)"
                 }
             ],
-            date: "21 Novembre 2022",
+            date: "18 Octobre 2022",
             desc: "Application mobile créée sur Android Studio avec le langage Kotlin, fonctionnant avec une API. Cette API a renvoyé un jeton lors de l'authentification, toutes les bandes dessinées sur une demande et d'autres demandes d'ajout/suppression de favoris.",
             video: vidComics
         },
@@ -221,12 +221,12 @@ export let projectDetailsData = {
                     name: "Firebase"
                 }
             ],
-            date: "21 Novembre 2022",
+            date: "18 Décembre 2022",
             desc: "Application mobile créée lors d'un cours de projet (équipe de 5) sur Android Studio avec le langage Kotlin. Cette application a plusieurs fonctionnalité: Une conncetion en tant que Coach et la possiblité de créer,modifier et supprimer des  workout plans avec des informations spécifiques à celui-ci. Une connection / inscription en tant qu'utilisateur, mot de passe oublié, abonnement / désabonnement à un workout plan et la possiblité de voir les details de celui-ci et faire un suivi de chaque 'daily workout', un calculateur de calories en fonction d'un aliment et du poids donnés et plusieurs autres fonctionnalités. Tout cela fonctionne avec un backend dont j'ai réalisé la majore partie ainsi que firebase pour stocker toutes les images",
             video: vidComics
         },
         3: {
-            title: "Site web Personnel",
+            title: "Site web professionnel",
             category: [
                 {
                     name: "WEB"
@@ -240,8 +240,8 @@ export let projectDetailsData = {
                     name: "Bootstrap"
                 }
             ],
-            date: "28 Novembre 2022",
-            desc: "Site créé avec React après avoir appris les bases à l'école, je voulais avoir un site professionnel et en même temps améliorer mes compétences. J'ai utilisé et appris Bootstrapt pour la première fois en faisant ce site Web. Le site Web était vraiment axé sur le contenu et les fonctionnalités en utilisant React, j'aurais pu faire un meilleur css et ajouter d'autres fonctionnalités mais je devais concentrer mon temps sur la fin de ma session scolaire et je voulais que mon site Web soit fait pour envoyer mes demandes de stages.",
+            date: "1 Décembre 2022",
+            desc: "Site créé avec React après avoir appris les bases à l'école, je voulais avoir un site professionnel et en même temps améliorer mes compétences. J'ai utilisé et appris Bootstrap pour la première fois en faisant ce site Web. Le site Web était vraiment axé sur le contenu et les fonctionnalités en utilisant React, j'aurais pu faire un meilleur css et ajouter d'autres fonctionnalités mais je devais concentrer mon temps sur la fin de ma session scolaire et je voulais que mon site Web soit fait pour envoyer mes demandes de stages.",
             video: vidPersonalWebsite
         },
         4: {
@@ -265,7 +265,7 @@ export let projectDetailsData = {
                     name: "API (JSON)"
                 }
             ],
-            date: "28 Novemre 2022",
+            date: "22 Novembre 2022",
             desc: "Site créé avec React et une API donnée par un professeur, le but était d'apprendre de nombreuses fonctionnalités de React. Nous avons également créé le même site Web dans Vue.js il y a quelques sessions.",
             video: vidPokemons
         },

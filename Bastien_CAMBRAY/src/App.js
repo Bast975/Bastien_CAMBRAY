@@ -3,12 +3,11 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import CV from './Components/CV';
 import Projects from './Components/Project/Projects';
-import Blog from './Components/Blog/Blog';
-import Blogpost from './Components/Blog/Blogpost';
+// import Blog from './Components/Blog/Blog';
+// import Blogpost from './Components/Blog/Blogpost';
 import NoMatch from './Components/NoMatch';
 import ProjectDetails from './Components/Project/ProjectDetails';
 import Footer from './Components/Footer';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./dark.css";
 import "./light.css";
@@ -42,8 +41,8 @@ function App() {
                   <Route path="/" element={<Home language={language} />} />
                   <Route path="/CV" element={<CV language={language} />} />
                   <Route path="/Projects" element={<Projects language={language} />} />
-                  <Route path="/Blog" element={<Blog language={language} />} />
-                  <Route path="/Blogpost" element={<Blogpost language={language} />} />
+                  {/* <Route path="/Blog" element={<Blog language={language} />} />
+                  <Route path="/Blogpost" element={<Blogpost language={language} />} /> */}
                   <Route path="/Project/details/:id" element={<ProjectDetails language={language} />} />
                   <Route path="*" element={<NoMatch />} />
                 </Routes>

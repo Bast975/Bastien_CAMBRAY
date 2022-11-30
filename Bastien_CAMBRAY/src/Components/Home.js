@@ -28,9 +28,9 @@ function Home(props) {
     <p className="fs-4">
       {content.title}
     </p>
-    <Carousel>
+    <Carousel interval={null}>
       <Carousel.Item>
-        <div className={`container-${modecontext.mode}`} id="2001-2016">
+        <div className={`container-bio-${modecontext.mode}`} id="2001-2016">
           <h5>
             2001-2016
           </h5>
@@ -50,25 +50,25 @@ function Home(props) {
         </div>
       </Carousel.Item>
       <Carousel.Item>
-      <div className={`container-${modecontext.mode}`} id="2016-2019">
+      <div className={`container-bio-${modecontext.mode}`} id="2016-2019">
         <h5>
           2016-2019
         </h5>
         <div className="row align-items-start">
-          <div className="col" style={{ marginLeft: "20px" }}>
-            <p className="fs-4">
+          <div className="col" style={{ marginLeft: "20px"}}>
+            <p className="fs-4" style={{ paddingTop: "25%"}}>
               {content.p2}
             </p>
           </div>
           <div className="col">
-            <img width="400" src={imgSPM} alt="SPM" className="rounded mx-auto d-block"></img>
+            <img width="400" src={imgSPM} alt="SPM" className="rounded mx-auto d-block" style={{ paddingTop: "25%"}}></img>
             <br />
           </div>
         </div>
       </div>
       </Carousel.Item>
       <Carousel.Item>
-      <div className={`container-${modecontext.mode}`} id="2019-2020">
+      <div className={`container-bio-${modecontext.mode}`} id="2019-2020">
         <h5>
           2019-2020
         </h5>
@@ -79,7 +79,7 @@ function Home(props) {
             </p>
           </div>
           <div className="col" style={{ marginRight: "20px" }}>
-            <p className="fs-4">
+            <p className="fs-4" style={{ paddingTop: "10%"}}>
               {content.p3.part1}
             </p>
             <p className="fs-4">
@@ -90,7 +90,7 @@ function Home(props) {
       </div>
       </Carousel.Item>
       <Carousel.Item>
-      <div className={`container-${modecontext.mode}`} id="2020-2023">
+      <div className={`container-bio-${modecontext.mode}`} id="2020-2023">
         <h5>
           2020-2023
         </h5>

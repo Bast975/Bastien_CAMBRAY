@@ -19,7 +19,7 @@ function Projects() {
             <a className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} href="#MOBILE"> MOBILE</a>
         </nav>
         <br />
-        <div className={`container-${modecontext.mode}`} id="WEB">
+        <div className={`container-portfolio-${modecontext.mode}`} id="WEB">
             <h5>
                 WEB
             </h5>
@@ -33,7 +33,7 @@ function Projects() {
             </div>
         </div>
         <br />
-        <div className={`container-${modecontext.mode}`} id="MOBILE">
+        <div className={`container-portfolio-${modecontext.mode}`} id="MOBILE">
             <h5>
                 MOBILE
             </h5>
