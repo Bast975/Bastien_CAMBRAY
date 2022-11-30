@@ -24,7 +24,7 @@ function ProjectDetails(props) {
         <div className="row">
         <div>
               <h2 className="float-md-start mb-0 portfolio-title">{data.title}</h2>
-              <Link to="/Projects" title="Projects" className="portfolio-links justify-content-center float-md-end"  style={{textDecoration: "none", color:"white"}}><i className="bi bi-arrows-angle-contract"></i></Link>
+              <Link to="/Projects" title="Projects" className="portfolio-links justify-content-center float-md-end"  style={{textDecoration: "none", color:"white"}}><i className="bi bi-arrows-angle-contract" style={{fontSize:"25px"}}></i></Link>
             </div>
           <div className="col-lg-8">
             <div>

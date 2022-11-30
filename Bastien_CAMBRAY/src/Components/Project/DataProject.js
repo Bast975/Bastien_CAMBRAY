@@ -4,6 +4,7 @@
 import imgComics from '../../images/portfolio/bdKotlin.jpg'
 import vidComics from '../../images/portfolio/bdKotlin.mp4'
 import imgVi from '../../images/portfolio/ViKotlin.jpg'
+import vidVi from '../../images/portfolio/ViKotlin.mp4'
 import imgPersonalWebsite from '../../images/portfolio/professionalwebsitereact.jpg'
 import vidPersonalWebsite from '../../images/portfolio/professionalwebsitereact.mp4'
 import imgPokemons from '../../images/portfolio/pokemonsReact.jpg'
@@ -132,8 +133,8 @@ export let projectDetailsData = {
                 }
             ],
             date: "18 December 2022",
-            desc: "Mobile application created during a project course (team of 5) on Android Studio with the Kotlin language. This application has many features: A connection as a Coach and the ability to create, delete, update workout plans with information specific to it. A login / registration as a user, forgotten password, subscription / unsubscription to a training plan and the possibility of seeing the details of it and keeping track of each 'daily workout', a calories calculator depending on a given food and weight and other many features. All this works with a backend that I made the major part, firebase is also used to store all the images and gif of the app",
-            video: vidComics
+            desc: "Mobile application created during a project course (team of 5) on Android Studio with the Kotlin language. This application has many features: A connection as a Coach and the ability to create, delete, update workout plans with information specific to it. A login / registration as a user, forgotten password, subscription / unsubscription to a training plan and the possibility of seeing the details of it and keeping track of each 'daily workout', a calories calculator depending on a given food and weight and other many features. All this works with a backend that I made the major part, firebase is also used to store all the images and gif of the app. Many updates of different features and UI weren't shown on the video as it's an project in process.",
+            video: vidVi
         },
         3: {
             title: "Professionnal Website",
@@ -222,8 +223,8 @@ export let projectDetailsData = {
                 }
             ],
             date: "18 Décembre 2022",
-            desc: "Application mobile créée lors d'un cours de projet (équipe de 5) sur Android Studio avec le langage Kotlin. Cette application a plusieurs fonctionnalité: Une conncetion en tant que Coach et la possiblité de créer,modifier et supprimer des  workout plans avec des informations spécifiques à celui-ci. Une connection / inscription en tant qu'utilisateur, mot de passe oublié, abonnement / désabonnement à un workout plan et la possiblité de voir les details de celui-ci et faire un suivi de chaque 'daily workout', un calculateur de calories en fonction d'un aliment et du poids donnés et plusieurs autres fonctionnalités. Tout cela fonctionne avec un backend dont j'ai réalisé la majore partie ainsi que firebase pour stocker toutes les images",
-            video: vidComics
+            desc: "Application mobile créée lors d'un cours de projet (équipe de 5) sur Android Studio avec le langage Kotlin. Cette application a plusieurs fonctionnalité: Une conncetion en tant que Coach et la possiblité de créer,modifier et supprimer des  workout plans avec des informations spécifiques à celui-ci. Une connection / inscription en tant qu'utilisateur, mot de passe oublié, abonnement / désabonnement à un workout plan et la possiblité de voir les details de celui-ci et faire un suivi de chaque 'daily workout', un calculateur de calories en fonction d'un aliment et du poids donnés et plusieurs autres fonctionnalités. Tout cela fonctionne avec un backend dont j'ai réalisé la majore partie ainsi que firebase pour stocker toutes les images. Beaucoup d'update concernant pleins de foncitonnalités et du UI n'était pas présente sur la vidéo étant donné que c'est un projet en cours.",
+            video: vidVi
         },
         3: {
             title: "Site web professionnel",

@@ -23,7 +23,6 @@
     .carousel-control-next,
     .carousel-control-prev,
     .carousel-indicators
-
     /*, .carousel-indicators */
       {
       filter: invert(100%);

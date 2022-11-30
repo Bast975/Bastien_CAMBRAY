@@ -28,8 +28,8 @@ function Home(props) {
     <p className="fs-4">
       {content.title}
     </p>
-    <Carousel interval={null}>
-      <Carousel.Item>
+    <Carousel >
+      <Carousel.Item interval={8000}>
         <div className={`container-bio-${modecontext.mode}`} id="2001-2016">
           <h5>
             2001-2016
@@ -39,24 +39,24 @@ function Home(props) {
               <img width="280" src={imgBastien} alt="imgBastien" className="rounded mx-auto d-block"></img>
               <br />
             </div>
-            <div className="col" style={{ marginRight: "20px" }}>
+            <div className="col">
               <br />
               <br />
-              <p className="fs-3">
+              <p className="fs-3" style={{ paddingRight: "100px"}}>
                 {content.p1}
               </p>
             </div>
           </div>
         </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={8000}>
       <div className={`container-bio-${modecontext.mode}`} id="2016-2019">
         <h5>
           2016-2019
         </h5>
         <div className="row align-items-start">
-          <div className="col" style={{ marginLeft: "20px"}}>
-            <p className="fs-4" style={{ paddingTop: "25%"}}>
+          <div className="col" >
+            <p className="fs-4" style={{ paddingTop: "25%", paddingLeft: "100px"}}>
               {content.p2}
             </p>
           </div>
@@ -67,7 +67,7 @@ function Home(props) {
         </div>
       </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={10000}>
       <div className={`container-bio-${modecontext.mode}`} id="2019-2020">
         <h5>
           2019-2020
@@ -78,7 +78,7 @@ function Home(props) {
               <img width="380" src={imgCOVID} alt="SPM" className="rounded mx-auto d-block"></img>
             </p>
           </div>
-          <div className="col" style={{ marginRight: "20px" }}>
+          <div className="col" style={{ paddingRight: "100px"}}>
             <p className="fs-4" style={{ paddingTop: "10%"}}>
               {content.p3.part1}
             </p>
@@ -89,7 +89,7 @@ function Home(props) {
         </div>
       </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={15000}>
       <div className={`container-bio-${modecontext.mode}`} id="2020-2023">
         <h5>
           2020-2023
@@ -100,6 +100,7 @@ function Home(props) {
             <p className="fs-4">
               {content.p4.part1}
             </p>
+            <br />
             <p className="fs-4">
               {content.p4.part2}
             </p>
