@@ -36,13 +36,13 @@ function Home(props) {
           </h5>
           <div className="row align-items-start">
             <div className="col">
-              <img width="280" src={imgBastien} alt="imgBastien" className="rounded mx-auto d-block"></img>
+              <img width="300" src={imgBastien} alt="imgBastien" className="rounded mx-auto d-block imgbio" style={{ paddingTop: "5%"}}></img>
               <br />
             </div>
             <div className="col">
               <br />
               <br />
-              <p className="fs-3" style={{ paddingRight: "100px"}}>
+              <p className="fs-3 padingRight">
                 {content.p1}
               </p>
             </div>
@@ -55,13 +55,13 @@ function Home(props) {
           2016-2019
         </h5>
         <div className="row align-items-start">
-          <div className="col" >
-            <p className="fs-4" style={{ paddingTop: "25%", paddingLeft: "100px"}}>
+          <div className="col marginLeft" >
+            <p className="fs-4 paddingTop">
               {content.p2}
             </p>
           </div>
-          <div className="col">
-            <img width="400" src={imgSPM} alt="SPM" className="rounded mx-auto d-block" style={{ paddingTop: "25%"}}></img>
+          <div className="col ">
+            <img width="460" src={imgSPM} alt="SPM" className="rounded mx-auto d-block imgbio paddingTop"></img>
             <br />
           </div>
         </div>
@@ -75,14 +75,14 @@ function Home(props) {
         <div className="row align-items-start">
           <div className="col">
             <p>
-              <img width="380" src={imgCOVID} alt="SPM" className="rounded mx-auto d-block"></img>
+              <img width="380" src={imgCOVID} alt="SPM" className="rounded mx-auto d-block imgbio"></img>
             </p>
           </div>
-          <div className="col" style={{ paddingRight: "100px"}}>
-            <p className="fs-4" style={{ paddingTop: "10%"}}>
+          <div className="col">
+            <p className="fs-4 padingRight">
               {content.p3.part1}
             </p>
-            <p className="fs-4">
+            <p className="fs-4 padingRight">
               {content.p3.part2}
             </p>
           </div>
@@ -95,7 +95,7 @@ function Home(props) {
           2020-2023
         </h5>
         <div className="row align-items-start">
-          <div className="col" style={{ marginLeft: "20px" }}>
+          <div className="col marginLeft">
             < br />
             <p className="fs-4">
               {content.p4.part1}
@@ -106,21 +106,21 @@ function Home(props) {
             </p>
           </div>
           <div className="col">
-            <img width="380" src={imgMTL} alt="MTL" className="rounded mx-auto d-block"></img>
+            <img width="380" src={imgMTL} alt="MTL" className="rounded mx-auto d-block imgbio"></img>
           </div>
         </div>
         <div className="row align-items-start">
-          <div className="col" style={{ margin: "20px" }}>
-            <p className="fs-4">
+          <div className="col">
+            <p className="fs-4" style={{ padding: "20px" }}>
               {content.p4.part3}
             </p>
           </div>
         </div>
         <div className="row align-items-start">
           <div className="col">
-            <img width="440" src={imgPROG} alt="PROG" className="rounded mx-auto d-block"></img>
+            <img width="440" src={imgPROG} alt="PROG" className="rounded mx-auto d-block imgbio"></img>
           </div>
-          <div className="col" style={{ marginRight: "20px" }}>
+          <div className="col marginRight">
             <p className="fs-4">
               {content.p4.part4}
             </p>

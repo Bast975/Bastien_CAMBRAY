@@ -19,6 +19,63 @@
       font-family: "Georgia", sans-serif;
     }
 
+    @media (min-width: 850px) {
+      .padingRight {
+       padding-right: 100px;
+      }
+      .padingLeft {
+        padding-left: 100px;
+       }
+      .marginRight {
+        margin-right: 20px;
+      }
+      .marginLeft {
+        margin-left: 20px;
+      }
+      .paddingTop {
+        padding-top: 120px;
+      }
+      .section-title-dark h2::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: #4ceb95;
+        margin: 4px 10px;
+      }
+  
+      .section-title-dark h2::before {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: #4ceb95;
+        margin: 4px 10px;
+      }
+    }
+    @media (max-width: 850px) {
+      .imgbio {
+        width: 290px;
+      }
+      .section-title-dark h2::after {
+        content: "";
+        width: 90px;
+        height: 1px;
+        display: inline-block;
+        background: #4ceb95;
+        margin: 4px 10px;
+      }
+  
+      .section-title-dark h2::before {
+        content: "";
+        width: 90px;
+        height: 1px;
+        display: inline-block;
+        background: #4ceb95;
+        margin: 4px 10px;
+      }
+    }
+
 
     .carousel-control-next,
     .carousel-control-prev,
@@ -65,23 +122,7 @@
       font-family: "Poppins", sans-serif;
     }
 
-    .section-title-dark h2::after {
-      content: "";
-      width: 120px;
-      height: 1px;
-      display: inline-block;
-      background: #4ceb95;
-      margin: 4px 10px;
-    }
 
-    .section-title-dark h2::before {
-      content: "";
-      width: 120px;
-      height: 1px;
-      display: inline-block;
-      background: #4ceb95;
-      margin: 4px 10px;
-    }
 
 
     /*--------------------------------------------------------------
