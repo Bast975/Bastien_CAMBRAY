@@ -106,7 +106,7 @@ function Home(props) {
             </p>
           </div>
           <div className="col">
-            <img width="380" src={imgMTL} alt="MTL" className="rounded mx-auto d-block"></img>
+            <img width="380" src={imgMTL} alt="MTL" className="rounded mx-auto d-block imgbio"></img>
           </div>
         </div>
         <div className="row align-items-start">
