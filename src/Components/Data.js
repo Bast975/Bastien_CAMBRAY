@@ -125,8 +125,8 @@ export let contentCV = {
 
 export let contentBio = {
     English: {
-      title: "Below you will find a brief biography of me, I decided to be as transparent as possible and to separate it into several parts according to years that I believe were important, made me evolve and become the person I am today.",
-      p1: "Bastien CAMBRAY, born on December 24, 2001 in Saint-Pierre and Miquelon, a small French island of approximately 6,000 habitants. In this period of my childhood, I was a rather introverted young \"geek\" who spent his time on video games and computer. I hated school and wanted to stop in college when I was 14. Fortunately for me, my parents dissuaded me from this idea.",
+      title: "Here is my biography. I wanted to be as transparent as possible. I divided it into several parts that correspond to the different periods of my life that shaped my character and made me become the person I am today.",
+      p1: "My name is Bastien Cambray. I was born on December 24, 2001 in Saint-Pierre et Miquelon, a small French archipelago of 6000 inhabitants located off the coast of the Province of Newfoundland and Labrador. In my teens, I was a rather introverted young \"geek\"  who spent his time on video games and the computer. I hated school and wanted to quit college when I was 14. Fortunately for me, my parents dissuaded me from this idea.",
       p2: "Still in Saint-Pierre, having been passionate about computer science for years, I decided to do a Professional Baccalaureate - Digital System. During this period I started to become more outgoing, I started going out often, met a lot of people and had unforgettable moments with my friends.",
       p3: {
         part1: "So I stayed in Saint-Pierre working for 6 months in construction / public works (blasting) and 6 months as a delivery man / driver with my brother. Despite the work, this year was not productive in my opinion, I had no goals and therefore spent my time going out, then the COVID arrived.",
@@ -140,8 +140,8 @@ export let contentBio = {
       }
     },
     Français: {
-      title: "Ci-dessous se trouve une brève biographie de moi, j'ai décidé d'être le plus transparent possible et de la séparer en plusieurs parties en fonction d'années qui selon moi ont été importantes, m'ont fait évoluer et devenir la personne que je suis aujourd'hui.",
-      p1: "Bastien CAMBRAY, né le 24 décembre 2001 à Saint-Pierre-et-Miquelon, une petite île française d'environ 6000 habitants. Dans cette période de mon enfance, j'étais un jeune \"geek\" plutôt introverti qui passait son temps sur les jeux vidéos et l'ordinateur Je détestais l'école et voulais d'ailleurs arrêter au collège à mes 14ans. Heureusement pour moi, mes parents m'ont dissuadé de cette idée.",
+      title: "Voici ma biographie. J'ai souhaité être le plus transparent possible. Je l'ai divisé en plusieurs parties qui correspondent aux différentes périodes de ma vie qui ont forgé mon caractère et m'ont fait devenir la personne que je suis aujourd'hui. ",
+      p1: "Je m'appelle Bastien Cambray. Je suis né le 24 décembre 2001 à Saint-Pierre et Miquelon, un petit archipel français de 6000 habitants situé au large de la Province de terre-Neuve et Labrador. Dans mon adolescence, j'étais un jeune \"geek\" plutôt introverti qui passait son temps sur les jeux vidéos et l'ordinateur. Je détestais l'école et voulais d'ailleurs arrêter au collège à mes 14ans. Heureusement pour moi, mes parents m'ont dissuadé de cette idée.",
       p2: "Toujours à Saint-Pierre, étant passionné par l'informatique depuis des années j'ai finalement décidé de faire un Baccalauréat professionnel - Système numérique. Durant cette période j'ai commencé à devenir plus extravertie, j'ai commencé à sortir souvent, fait beaucoup de rencontres et vécu des moments inoubliables avec mes amis.",
       p3: {
         part1: "Je suis donc resté à Saint-Pierre travailler pendant 6 mois dans le bâtiment / travaux publics (en dynamitage) et 6 mois en tant que livreur / chauffeur avec mon frère. Malgrès le travail, cette année n'était pas productif selon moi, je n'avais aucun objectif et donc passé mon temps à sortir, puis le COVID est arrivé.",
