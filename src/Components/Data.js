@@ -129,7 +129,7 @@ export let contentBio = {
       p1: "Bastien CAMBRAY, born on December 24, 2001 in Saint-Pierre and Miquelon, a small French island of approximately 6,000 habitants. In this period of my childhood, I was a rather introverted young \"geek\" who spent his time on video games and computer. I hated school and wanted to stop in college when I was 14. Fortunately for me, my parents dissuaded me from this idea.",
       p2: "Still in Saint-Pierre, having been passionate about computer science for years, I decided to do a Professional Baccalaureate - Digital System. During this period I started to become more outgoing, I started going out often, met a lot of people and had unforgettable moments with my friends.",
       p3: {
-        part1: "So I stayed in Saint-Pierre working for 6 months in construction / public works (blasting) and 6 months as a delivery man / driver with my brother. This year despite the work wasn't productive, I had no goals and therefore spent my time going out, then the COVID arrived.",
+        part1: "So I stayed in Saint-Pierre working for 6 months in construction / public works (blasting) and 6 months as a delivery man / driver with my brother. Despite the work, this year was not productive in my opinion, I had no goals and therefore spent my time going out, then the COVID arrived.",
         part2: "I didn't like the way of life I had, so I started to do research to go to study in Montreal in a field that I had appreciated during an internship : application development. During the COVID, I also started sport (home workout), I had to find a way to spend my energy somewhere."
       },
       p4: {
@@ -144,7 +144,7 @@ export let contentBio = {
       p1: "Bastien CAMBRAY, né le 24 décembre 2001 à Saint-Pierre-et-Miquelon, une petite île française d'environ 6000 habitants. Dans cette période de mon enfance, j'étais un jeune \"geek\" plutôt introverti qui passait son temps sur les jeux vidéos et l'ordinateur Je détestais l'école et voulais d'ailleurs arrêter au collège à mes 14ans. Heureusement pour moi, mes parents m'ont dissuadé de cette idée.",
       p2: "Toujours à Saint-Pierre, étant passionné par l'informatique depuis des années j'ai finalement décidé de faire un Baccalauréat professionnel - Système numérique. Durant cette période j'ai commencé à devenir plus extravertie, j'ai commencé à sortir souvent, fait beaucoup de rencontres et vécu des moments inoubliables avec mes amis.",
       p3: {
-        part1: "Je suis donc resté à Saint-Pierre travailler pendant 6 mois dans le bâtiment / travaux publics (en dynamitage) et 6 mois en tant que livreur / chauffeur avec mon frère. Despite the work, this year was not productive in my opinion, I had no goals and therefore spent my time going out, then the COVID arrived.",
+        part1: "Je suis donc resté à Saint-Pierre travailler pendant 6 mois dans le bâtiment / travaux publics (en dynamitage) et 6 mois en tant que livreur / chauffeur avec mon frère. Malgrès le travail, cette année n'était pas productif selon moi, je n'avais aucun objectif et donc passé mon temps à sortir, puis le COVID est arrivé.",
         part2: "Le train de vie que j'avais ne me plaisait pas, je voulais faire quelque chose d'autres, j'ai donc commencé à faire des recherches pour partir aux études à Montréal dans un domaine que j'avais apprécié lors d'un stage, la programmation. Durant le COVID j'ai également commencé le sport, il fallait que je trouve un moyen de dépenser mon énergie quelque part."
       },
       p4: {

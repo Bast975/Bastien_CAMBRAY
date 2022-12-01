@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import "../../dark.css";
+import "../../main.css";
 import "../../light.css";
 import { ModeContext } from '../../App';
 import { Link } from "react-router-dom";
