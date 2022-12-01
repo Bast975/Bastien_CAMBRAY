@@ -9,7 +9,7 @@ import NoMatch from './Components/NoMatch';
 import ProjectDetails from './Components/Project/ProjectDetails';
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./dark.css";
+import "./main.css";
 import "./light.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

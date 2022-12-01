@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext, useState, useEffect } from "react";
-import "../dark.css";
+import "../main.css";
 import "../light.css";
 import { Link } from "react-router-dom";
 import { ModeContext } from '../App';
