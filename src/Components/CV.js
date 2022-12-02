@@ -27,7 +27,7 @@ function CV(props) {
             <ul>
               <li>{content.languages}</li>
               <li>{content.habitation}</li>
-              <li>bastiencambray975@gmail.com</li>
+              <li>bastiencambray.work@gmail.com</li>
             </ul>
           </div>
           <h3 className={`resume-title-${modecontext.mode}`}>{content.title2}</h3>
