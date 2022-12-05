@@ -56,7 +56,7 @@ function Home(props) {
         </h5>
         <div className="row align-items-start">
           <div className="col marginLeft" >
-            <p className="fs-4 paddingTop">
+            <p className="fs-4 paddingTop140">
               {content.p2}
             </p>
           </div>
@@ -79,14 +79,14 @@ function Home(props) {
             </p>
           </div>
           <div className="col">
-            <p className="fs-4 padingRight">
+            <p className="fs-4 padingRight paddingTop60">
               {content.p3.part1}
-            </p>
-            <p className="fs-4 padingRight">
-              {content.p3.part2}
             </p>
           </div>
         </div>
+        <p className="fs-4 padingRight padingLeft">
+            {content.p3.part2}
+            </p>
       </div>
       </Carousel.Item>
       <Carousel.Item interval={15000}>

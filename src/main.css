@@ -35,6 +35,12 @@
       .paddingTop {
         padding-top: 120px;
       }
+      .paddingTop60 {
+        padding-top: 60px;
+      }
+      .paddingTop140 {
+        padding-top: 140px;
+      }
       .section-title-dark h2::after {
         content: "";
         width: 120px;
