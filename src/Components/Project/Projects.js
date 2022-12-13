@@ -17,6 +17,7 @@ function Projects() {
         <nav className={`nav nav-masthead-${modecontext.mode} justify-content-center float-md`}>
             <a className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} href="#WEB"> WEB</a>
             <a className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} href="#MOBILE"> MOBILE</a>
+            <a className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} href="#IoT"> IoT</a>
         </nav>
         <br />
         <div className={`container-portfolio-${modecontext.mode}`} id="WEB">
@@ -46,7 +47,20 @@ function Projects() {
                 }
             </div>
         </div>
-       
+        <br />
+        <div className={`container-portfolio-${modecontext.mode}`} id="IoT">
+            <h5>
+            IoT
+            </h5>
+            <div className="row portfolio-container">
+                {
+                    projectData.IoT.map((project) => {
+                        return <ProjectCard project={project}
+                            key={project.id} />
+                    })
+                }
+            </div>
+        </div>
     </section >
 }
 

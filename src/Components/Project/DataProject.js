@@ -1,6 +1,3 @@
-// import imgTv from '../images/portfolio/TVshowsKotlin.jpg'
-// import imgMeteo from '../images/portfolio/meteoKotlin.jpg'
-// import imgAlbums from '../images/portfolio/albumsKotlin.jpg'
 import imgComics from '../../images/portfolio/bdKotlin.jpg'
 import vidComics from '../../images/portfolio/bdKotlin.mp4'
 import imgVi from '../../images/portfolio/ViKotlin.jpg'
@@ -9,6 +6,10 @@ import imgPersonalWebsite from '../../images/portfolio/professionalwebsitereact.
 import vidPersonalWebsite from '../../images/portfolio/professionalwebsitereact.mp4'
 import imgPokemons from '../../images/portfolio/pokemonsReact.jpg'
 import vidPokemons from '../../images/portfolio/pokemonsReact.mp4'
+import imgPodcasts from '../../images/portfolio/podcastReact.JPG'
+import vidPodcasts from '../../images/portfolio/podcastReact.mp4'
+import imgParkingiot from '../../images/portfolio/parkingiot.jpg'
+import vidParkingiot from '../../images/portfolio/parkingiot.MOV'
 
 export let projectData = {
     Mobile: [
@@ -83,7 +84,47 @@ export let projectData = {
                 }
             ],
             img: imgPokemons
+        },
+        {
+            id: 5,
+            title: "Podcast",
+            technologie: [
+                {
+                    name: "React"
+                },
+                {
+                    name: "Bulma"
+                },
+                {
+                    name: "API (JSON)"
+                }
+            ],
+            img: imgPodcasts
         }
+    ],
+    IoT : [
+        {
+            id: 6,
+            title: "Parking intelligent",
+            technologie: [
+                {
+                    name: "Arduino"
+                },
+                {
+                    name: "Raspberry Pi"
+                },
+                {
+                    name: "C++"
+                },
+                {
+                    name: "Python"
+                },
+                {
+                    name: "PysonDB"
+                },
+            ],
+            img: imgParkingiot
+        },
     ]
 }
 
@@ -180,6 +221,56 @@ export let projectDetailsData = {
             desc: "Website created with React, the API was given by the teacher, the goal was to learn many features of react. We also have done the same website in Vue.js few sessions ago.",
             video: vidPokemons
         },
+        5: {
+            title: "Podcasts website",
+            category: [
+                {
+                    name: "WEB"
+                }
+            ],
+            technologie: [
+                {
+                    name: "React"
+                },
+                {
+                    name: "Bulma"
+                },
+                {
+                    name: "API (JSON)"
+                }
+            ],
+            date: "14 December 2022",
+            desc: "Website created with React, the API was given by the teacher, the goal was to use in this website every react skills we learned",
+            video: vidPodcasts
+        },
+        6: {
+            title: "Intelligent parking",
+            category: [
+                {
+                    name: "IoT"
+                }
+            ],
+            technologie: [
+                {
+                    name: "Arduino"
+                },
+                {
+                    name: "Raspberry Pi"
+                },
+                {
+                    name: "C++"
+                },
+                {
+                    name: "Python"
+                },
+                {
+                    name: "PysonDB"
+                },
+            ],
+            date: "12 December 2022",
+            desc: "IoT project done in a group of 3, The goal was to have an intelligent parking with a lot of features at the end of the course. Our project had two motion detectors, when an object (a car) approaches it to enter the parking lot, the motion detector detects it, a camera opens afterwards which detects a QR CODE containing registration of a car, if it is detected in our database, the parking door opens with the help of a servomotor. If not detected or 'banned', a buzzer sounds. There is also an LCD that writes the number of spaces left in the parking lot, when a car exits, it must be detected by the second distance sensor, the number of spaces in the parking lot updates.",
+            video: vidParkingiot
+        }
     },
     Français: {
         1: {
@@ -270,6 +361,56 @@ export let projectDetailsData = {
             desc: "Site créé avec React et une API donnée par un professeur, le but était d'apprendre de nombreuses fonctionnalités de React. Nous avons également créé le même site Web dans Vue.js il y a quelques sessions.",
             video: vidPokemons
         },
+        5: {
+            title: "Podcasts website",
+            category: [
+                {
+                    name: "WEB"
+                }
+            ],
+            technologie: [
+                {
+                    name: "React"
+                },
+                {
+                    name: "Bulma"
+                },
+                {
+                    name: "API (JSON)"
+                }
+            ],
+            date: "12 Decembre 2022",
+            desc: "Site créé avec React et une API donnée par un professeur, le but était d'utiliser toutes les compétences de react que nous avions appris.",
+            video: vidPodcasts
+        },
+        6: {
+            title: "Parking intelligent",
+            category: [
+                {
+                    name: "IoT"
+                }
+            ],
+            technologie: [
+                {
+                    name: "Arduino"
+                },
+                {
+                    name: "Raspberry Pi"
+                },
+                {
+                    name: "C++"
+                },
+                {
+                    name: "Python"
+                },
+                {
+                    name: "PysonDB"
+                },
+            ],
+            date: "12 Decembre 2022",
+            desc: "Project Iot fait en groupe de 3, Le but était d'avoir un parking intelligent à la fin du cours avec plusieurs utilités. Notre projet avait deux détecteurs de mouvements, lorsqu'un objet (une voiture) s'approche de celui-ci pour entrer dans le parking, le détecteur de mouvement le détecte, une caméra s'ouvre par la suite qui détecte un QR CODE contenant l'immatriculation d'une voiture, si celle-ci est détecté dans notre base de données, la porte du parking s'ouvre à 'laide d'un servomoteur. Si elle n'est pas détecté ou 'interdite', un buzzer sonne. Il y a également un LCD qui écrit le nombre de places restant dans le parking, lorsqu'une voiture sort, elle doit se faire détecter par le deuxième capteur de distance, le nombre de places du parking se met à jour.",
+            video: vidParkingiot
+        }
     }
 
 }
