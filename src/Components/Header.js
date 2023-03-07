@@ -52,7 +52,7 @@ function Header(props) {
     <nav className={`nav nav-masthead-${modecontext.mode} justify-content-center float-md-end`} role="navigation">
       <Link to="/" activeclassname={`nav-link-${modecontext.mode} fw-bold py-1 px-0 active`} className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`}>Bio</Link>
       <Link to="/CV" activeclassname={`nav-link-${modecontext.mode} fw-bold py-1 px-0 active`} className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`}>CV</Link>
-      <Link to="/Projects" activeclassname={`nav-link-${modecontext.mode} fw-bold py-1 px-0 active`} className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`}>Projects</Link>
+      <Link to="/Projects" activeclassname={`nav-link-${modecontext.mode} fw-bold py-1 px-0 active`} className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`} style={{marginRight: "10px"}}>Projects</Link>
       {/* <Link to="/Blog" activeclassname={`nav-link-${modecontext.mode} fw-bold py-1 px-0 active`} className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`}>Blog</Link> */}
       <a className="btn btn-sm btn-outline-secondary" onClick={ChangeLangage} style={{margin: "5px"}}> {langageacro}</a>
       <a className="btn btn-sm btn-outline-secondary" onClick={ChangeMode} style={{margin: "5px"}}> <i className={modeclass}></i></a>

@@ -27,7 +27,7 @@ function App() {
   return (
     <ModeContext.Provider value={objetsEtMethodesDuContexte}>
       <BrowserRouter>
-          <div className={`d-flex h-100 text-center text-bg-${mode}`}>
+          <div className={`d-flex h-100 text-bg-${mode}`}>
             <div className="container-md d-flex w-100 h-100 p-3 mx-auto flex-column">
               <header className="mb-auto">
                 <Header language={language}

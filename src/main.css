@@ -43,7 +43,7 @@
       }
       .section-title-dark h2::after {
         content: "";
-        width: 120px;
+        width: 140px;
         height: 1px;
         display: inline-block;
         background: #4ceb95;
@@ -52,7 +52,7 @@
   
       .section-title-dark h2::before {
         content: "";
-        width: 120px;
+        width: 140px;
         height: 1px;
         display: inline-block;
         background: #4ceb95;
@@ -83,12 +83,35 @@
     }
 
 
-    .carousel-control-next,
-    .carousel-control-prev,
-    .carousel-indicators
-    /*, .carousel-indicators */
-      {
-      filter: invert(100%);
+    .carousel-control-prev-icon-dark,
+    .carousel-control-next-icon-dark {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .carousel-control-prev-icon-dark:before,
+    .carousel-control-next-icon-dark:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23FFF"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /%3E%3C/svg%3E');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .carousel-control-next-icon-dark:before {
+      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23FFF"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /%3E%3C/svg%3E');
+    }
+
+    .carousel-indicators-dark button{
+      background-color: rgb(177, 50, 50) ;
     }
 
     .container-bio-dark {
@@ -101,9 +124,7 @@
     }
 
 
-    .container-bio-dark p {
-      text-align: justify;
-    }
+
 
     .container-bio-dark h5 {
       font-size: 20px;
@@ -117,7 +138,7 @@
 
 
     .section-title-dark h2 {
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       padding: 0;
       line-height: 1px;
@@ -150,6 +171,7 @@
     .nav-masthead-dark .nav-link-dark {
       color: rgba(255, 255, 255, .5);
       border-bottom: .25rem solid transparent;
+      text-decoration: none;
     }
 
     .nav-masthead-dark .nav-link-dark:hover,
@@ -422,9 +444,7 @@
     }
 
 
-    .container-portfolio-dark p {
-      text-align: justify;
-    }
+
 
     .container-portfolio-dark h5 {
       font-size: 20px;

@@ -10,7 +10,7 @@ function Projects() {
     console.log(projectData.Mobile)
     return <section id="portfolio" className="portfolio">
         <br />
-        <div className={`section-title-${modecontext.mode}`}>
+        <div className={`section-title-${modecontext.mode} text-center`}>
             <h2>Projects</h2>
             <br />
         </div>

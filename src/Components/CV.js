@@ -15,7 +15,7 @@ function CV(props) {
   return <section id="resume" className="resume">
     <div className="container">
       <br />
-      <div className={`section-title-${modecontext.mode}`}>
+      <div className={`section-title-${modecontext.mode} text-center`}>
         <h2>CV</h2>
       </div>
       <div className="row">

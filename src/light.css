@@ -93,7 +93,35 @@
       font-family: "Poppins", sans-serif;
     }
 
+    .carousel-control-prev-icon-light,
+    .carousel-control-next-icon-light {
+      background-color: rgba(0, 0, 0, 0.756);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .carousel-control-prev-icon-light:before,
+    .carousel-control-next-icon-light:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23FFF"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /%3E%3C/svg%3E');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
+    .carousel-control-next-icon-light:before {
+      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23FFF"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /%3E%3C/svg%3E');
+    }
+
+    .carousel-indicators-light button{
+      background-color: rgb(6, 6, 6) ;
+    }
     /*--------------------------------------------------------------
     # Header
     --------------------------------------------------------------*/
