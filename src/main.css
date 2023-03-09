@@ -24,23 +24,32 @@
        padding-right: 100px;
       }
       .padingLeft {
+       padding-right: 100px;
+      }
+      .row2016{
+        min-height: 550px;
+        padding-right: 100px;
+        padding-left: 110px;
+      }
+      .row2016-2{
         padding-left: 100px;
-       }
-      .marginRight {
-        margin-right: 20px;
+        padding-right: 100px;
+        padding-bottom: 25px;
       }
-      .marginLeft {
-        margin-left: 20px;
+      .row2019{
+        padding-right: 150px;
+        padding-left: 100px;
       }
-      .paddingTop {
-        padding-top: 120px;
+      .row2020{
+        padding-right: 100px;
+        padding-left: 100px;
       }
-      .paddingTop60 {
-        padding-top: 60px;
+      .row2020-2{
+        padding-right: 125px;
+        padding-left: 125px;
       }
-      .paddingTop140 {
-        padding-top: 140px;
-      }
+
+
       .section-title-dark h2::after {
         content: "";
         width: 140px;
@@ -90,7 +99,6 @@
       width: 40px;
       height: 40px;
       display: flex;
-      
       justify-content: center;
       align-items: center;
     }
@@ -133,6 +141,7 @@
       padding: 5px 15px;
       display: inline-block;
       font-weight: 600;
+      margin-top: 10px;
       margin-bottom: 10px;
     }
 
