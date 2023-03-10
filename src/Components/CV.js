@@ -18,10 +18,9 @@ function CV(props) {
       <div className={`section-title-${modecontext.mode} text-center`}>
         <h2>CV</h2>
       </div>
-      <div className="row">
-        <div className="col-lg-6">
-          <h3 className={`resume-title-${modecontext.mode}`}>{content.title1}</h3>
-          <div className={`resume-item-${modecontext.mode} pb-0`}>
+      <div className="row justify-content-center align-items-start text-center">
+        <div className={`resume-box-${modecontext.mode}`}>
+          <div className={`resume-summary-${modecontext.mode}`}>
             <h4>Bastien CAMBRAY</h4>
             <p><em>{content.situation}</em></p>
             <ul>
@@ -30,6 +29,10 @@ function CV(props) {
               <li>bastiencambray.work@gmail.com</li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-6">
           <h3 className={`resume-title-${modecontext.mode}`}>{content.title2}</h3>
           <div className={`resume-item-${modecontext.mode}`}>
             <h4>{content.diplome.diplome1.title}</h4>
