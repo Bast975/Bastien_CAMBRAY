@@ -16,7 +16,12 @@ function Home(props) {
     <div className="home-container">
       <section className={`hero-section-${modecontext.mode}`}>
         <p className="hero-kicker">{content.home.kicker}</p>
-        <h1 className="hero-title">{content.home.name}</h1>
+        <h1 className="hero-title">
+          {content.home.name.split(" ")[0]}{" "}
+          <span className="hero-title-accent">
+            {content.home.name.split(" ").slice(1).join(" ")}
+          </span>
+        </h1>
         <h2 className="hero-subtitle">{content.home.subtitle}</h2>
         <p className="hero-description">{content.home.description}</p>
       </section>

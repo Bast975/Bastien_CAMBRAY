@@ -1,394 +1,51 @@
-    /*--------------------------------------------------------------
-  # General
-  --------------------------------------------------------------*/
+/* ==========================================================
+   Light mode overrides
+   ========================================================== */
 
-    body {
-      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-    }
+.section-title-light h2 {
+  color: #5f6873;
+}
 
-    .d-flex {
-      font-family: "Open Sans", sans-serif;
-      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    }
+@media (min-width: 850px) {
+  .section-title-light h2::before,
+  .section-title-light h2::after {
+    background: rgba(95, 104, 115, 0.35);
+  }
+}
 
-    h1,
-    h2,
-    h3 {
-      font-family: "Georgia", sans-serif;
-    }
+@media (max-width: 850px) {
+  .section-title-light h2::before,
+  .section-title-light h2::after {
+    background: rgba(95, 104, 115, 0.35);
+  }
+}
 
-    @media (min-width: 850px) {
-      .section-title-light h2::after {
-        content: "";
-        width: 120px;
-        height: 1px;
-        display: inline-block;
-        background: rgba(12, 12, 12, 0.932);
-        margin: 4px 10px;
-      }
-  
-      .section-title-light h2::before {
-        content: "";
-        width: 120px;
-        height: 1px;
-        display: inline-block;
-        background: rgba(12, 12, 12, 0.932);
-        margin: 4px 10px;
-      }
-    }
-    @media (max-width: 850px) {
+.nav-masthead-light .nav-link-light {
+  color: rgba(35, 35, 35, 0.72);
+  border-bottom: 0.15rem solid transparent;
+  text-decoration: none;
+}
 
-      .section-title-light h2::after {
-        content: "";
-        width: 90px;
-        height: 1px;
-        display: inline-block;
-        background: rgba(12, 12, 12, 0.932);
-        margin: 4px 10px;
-      }
-  
-      .section-title-light h2::before {
-        content: "";
-        width: 90px;
-        height: 1px;
-        display: inline-block;
-        background: rgba(12, 12, 12, 0.932);
-        margin: 4px 10px;
-      }
-    }
-    .container-bio-light {
-      box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.137);
-      padding: 5px;
-      min-height: 650px;
-      border-style: ridge;
-      border-width: 1px;
-      border-color: #6e5959;
-    }
+.nav-masthead-light .nav-link-light:hover,
+.nav-masthead-light .nav-link-light:focus {
+  color: #111827;
+  border-bottom-color: rgba(95, 104, 115, 0.4);
+}
 
-    .container-bio-light h5 {
-      font-size: 20px;
-      color: #363535;
-      background: #8d8d8d17;
-      padding: 5px 15px;
-      display: inline-block;
-      font-weight: 600;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+.nav-masthead-light .nav-link-light + .nav-link-light {
+  margin-left: 1rem;
+}
 
-    .container-bio-light p {
-      text-align: justify;
-    }
+.info-card-light {
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+}
 
-    .section-title-light h2 {
-      font-size: 14px;
-      font-weight: 500;
-      padding: 0;
-      line-height: 1px;
-      margin: 0 0 20px 0;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #6e5959;
-      font-family: "Poppins", sans-serif;
-    }
+.info-card-light:hover {
+  border-color: rgba(95, 104, 115, 0.28);
+  background: #f2f6fa;
+}
 
-    .carousel-control-prev-icon-light,
-    .carousel-control-next-icon-light {
-      background-color: rgba(0, 0, 0, 0.756);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .carousel-control-prev-icon-light:before,
-    .carousel-control-next-icon-light:before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23FFF"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /%3E%3C/svg%3E');
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .carousel-control-next-icon-light:before {
-      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23FFF"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /%3E%3C/svg%3E');
-    }
-
-    .carousel-indicators-light button{
-      background-color: rgb(6, 6, 6) ;
-    }
-    /*--------------------------------------------------------------
-    # Header
-    --------------------------------------------------------------*/
-
-    .btn-secondary,
-    .btn-secondary:hover,
-    .btn-secondary:focus {
-      color: #333;
-      text-shadow: none;
-      /* Prevent inheritance from `body` */
-    }
-
-    .cover-container {
-      max-width: 42em;
-    }
-
-    /* light mode */
-    .nav-masthead-light .nav-link-light {
-      color: #00000096;
-      border-bottom: .25rem solid transparent;
-    }
-
-    .nav-masthead-light .nav-link-light:hover,
-    .nav-masthead-light .nav-link-light:focus {
-      border-bottom-color: #00000096;
-    }
-
-    .nav-masthead-light .nav-link-light+.nav-link-light {
-      margin-left: 1rem;
-    }
-
-    .nav-masthead-light .active {
-      color: rgba(255, 255, 255, 0);
-      border-bottom-color: rgba(255, 255, 255, 0);
-    }
-
-    /*--------------------------------------------------------------
-    # Resume
-    --------------------------------------------------------------*/
-    .row {
-      text-align: left;
-    }
-
-    .resume .resume-title-light {
-      font-size: 26px;
-      font-weight: 700;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: rgba(12, 12, 12, 0.932);
-      font-family: "Open Sans", sans-serif;
-    }
-
-    .resume .resume-item-light {
-      padding: 0 0 20px 20px;
-      margin-top: -2px;
-      border-left: 2px solid #0000003b;
-      position: relative;
-    }
-
-    .resume .resume-item-light h4 {
-      line-height: 18px;
-      font-size: 18px;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-family: "Poppins", sans-serif;
-      color: #00000094;
-      margin-bottom: 10px;
-    }
-
-    .resume .resume-item-light h5 {
-      font-size: 16px;
-      background: rgba(0, 0, 0, 0.103);
-      padding: 5px 15px;
-      display: inline-block;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .resume .resume-item-light ul {
-      padding-left: 20px;
-    }
-
-    .resume .resume-item-light ul li {
-      padding-bottom: 10px;
-    }
-
-    .resume .resume-item-light:last-child {
-      padding-bottom: 0;
-    }
-
-    .resume .resume-item-light::before {
-      content: "";
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      border-radius: 50px;
-      left: -9px;
-      top: 0;
-      background: #000000fa;
-      border: 2px solid #000000ef;
-    }
-
-    /*--------------------------------------------------------------
-  # Portfolio
-  --------------------------------------------------------------*/
-    .portfolio .portfolio-item {
-      margin-bottom: 30px;
-    }
-
-
-    .portfolio .portfolio-wrap {
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .portfolio .portfolio-wrap::before {
-      content: "";
-      background: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      left: 30px;
-      right: 30px;
-      top: 30px;
-      bottom: 30px;
-      transition: all ease-in-out 0.3s;
-      z-index: 2;
-      opacity: 0;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-info {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      text-align: center;
-      z-index: 3;
-      transition: all ease-in-out 0.3s;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-info::before {
-      display: block;
-      content: "";
-      width: 48px;
-      height: 48px;
-      position: absolute;
-      top: 35px;
-      left: 35px;
-      border-top: 3px solid #fff;
-      border-left: 3px solid #fff;
-      transition: all 0.5s ease 0s;
-      z-index: 9994;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-info::after {
-      display: block;
-      content: "";
-      width: 48px;
-      height: 48px;
-      position: absolute;
-      bottom: 35px;
-      right: 35px;
-      border-bottom: 3px solid #fff;
-      border-right: 3px solid #fff;
-      transition: all 0.5s ease 0s;
-      z-index: 9994;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-info h4 {
-      font-size: 20px;
-      color: #fff;
-      font-weight: 600;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-info p {
-      color: #ffffff;
-      font-size: 14px;
-      text-transform: uppercase;
-      padding: 20px;
-      margin: 0;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-links {
-      text-align: center;
-      z-index: 4;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-links a {
-      color: #fff;
-      margin: 0 2px;
-      font-size: 28px;
-      display: inline-block;
-      transition: 0.3s;
-    }
-
-    .portfolio .portfolio-wrap .portfolio-links a:hover {
-      color: #63eda3;
-    }
-
-    .portfolio .portfolio-wrap:hover::before {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 1;
-    }
-
-    .portfolio .portfolio-wrap:hover .portfolio-info {
-      opacity: 1;
-    }
-
-    .portfolio .portfolio-wrap:hover .portfolio-info::before {
-      top: 15px;
-      left: 15px;
-    }
-
-    .portfolio .portfolio-wrap:hover .portfolio-info::after {
-      bottom: 15px;
-      right: 15px;
-    }
-
-    .container-portfolio-light {
-      box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.034);
-      padding: 5px;
-    }
-
-    .container-portfolio-light h5 {
-      font-size: 20px;
-      color: #363535;
-      background: #8d8d8d17;
-      ;
-      padding: 5px 15px;
-      display: inline-block;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .container-portfolio-light p {
-      text-align: justify;
-    }
-
-    /*--------------------------------------------------------------
-    # Blog
-    --------------------------------------------------------------*/
-
-
-    .display-4 {
-      font-size: 2.5rem;
-    }
-
-    .blog-card-light {
-      text-decoration: none;
-      color: black;
-    }
-
-    .blog-card-light:hover {
-      text-decoration: none;
-      color: #00000096;
-    }
-
-    .card-light {
-      border-color: #000000
-    }
+.portfolio-footer {
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+}

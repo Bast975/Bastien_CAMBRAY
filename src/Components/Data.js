@@ -53,7 +53,7 @@ export const portfolioContent = {
     footer: {
       name: "Bastien Cambray",
       location: "Bruxelles, Belgique",
-      email: "bastiencambray.work@gmail.com",
+      email: "bastiencx.pro@gmail.com",
     },
   },
 
@@ -111,7 +111,7 @@ export const portfolioContent = {
     footer: {
       name: "Bastien Cambray",
       location: "Brussels, Belgium",
-      email: "bastiencambray.work@gmail.com",
+      email: "bastiencx.pro@gmail.com",
     },
   },
 };
