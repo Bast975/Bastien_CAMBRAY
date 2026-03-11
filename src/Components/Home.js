@@ -24,6 +24,7 @@ function Home(props) {
         </h1>
         <h2 className="hero-subtitle">{content.home.subtitle}</h2>
         <p className="hero-description">{content.home.description}</p>
+        <p className="hero-meta">{content.home.meta}</p>
       </section>
 
       <section className={`content-section-${modecontext.mode}`}>
@@ -66,17 +67,35 @@ function Home(props) {
         <div className="skills-grid">
           <div className={`info-card-${modecontext.mode}`}>
             <h3>{content.home.skill1Title}</h3>
-            <p className="section-text">{content.home.skill1Text}</p>
+            <div className="skill-tags">
+              {content.home.skill1Items.map((item) => (
+                <span key={item} className={`skill-tag-${modecontext.mode}`}>
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className={`info-card-${modecontext.mode}`}>
             <h3>{content.home.skill2Title}</h3>
-            <p className="section-text">{content.home.skill2Text}</p>
+            <div className="skill-tags">
+              {content.home.skill2Items.map((item) => (
+                <span key={item} className={`skill-tag-${modecontext.mode}`}>
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className={`info-card-${modecontext.mode}`}>
             <h3>{content.home.skill3Title}</h3>
-            <p className="section-text">{content.home.skill3Text}</p>
+            <div className="skill-tags">
+              {content.home.skill3Items.map((item) => (
+                <span key={item} className={`skill-tag-${modecontext.mode}`}>
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -100,13 +119,6 @@ function Home(props) {
           <h3>{content.home.work3Title}</h3>
           <p className="section-text">{content.home.work3Text}</p>
         </div>
-      </section>
-
-      <section className={`content-section-${modecontext.mode}`}>
-        <div className={`section-title-${modecontext.mode} text-center`}>
-          <h2>{content.home.contactTitle}</h2>
-        </div>
-        <p className="section-text">{content.home.contactText}</p>
       </section>
     </div>
   );

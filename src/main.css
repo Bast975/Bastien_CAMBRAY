@@ -95,6 +95,17 @@ a {
   margin-left: 1rem;
 }
 
+.logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.logo-accent {
+  color: #5fe2af;
+}
+
 /* ==========================================================
    Hero
    ========================================================== */
@@ -136,6 +147,13 @@ a {
 
 .hero-title-accent {
   color: #5fe2af;
+}
+
+.hero-meta {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  opacity: 0.72;
+  line-height: 1.7;
 }
 
 /* ==========================================================
@@ -191,6 +209,36 @@ a {
 .info-card-light h3 {
   font-size: 1.14rem;
   margin-bottom: 8px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.skill-tag-dark,
+.skill-tag-light {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.skill-tag-dark {
+  background: rgba(95, 226, 175, 0.1);
+  border: 1px solid rgba(95, 226, 175, 0.22);
+  color: #dffaf0;
+}
+
+.skill-tag-light {
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  color: #1f2937;
 }
 
 /* ==========================================================

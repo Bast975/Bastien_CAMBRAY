@@ -52,8 +52,9 @@ function Header(props) {
 
   return (
     <div>
-      <h3 className="float-md-start mb-0">{content.header.brand}</h3>
-
+      <h3 className="float-md-start mb-0 logo">
+        bastien<span className="logo-accent">.cx</span>
+      </h3>        
       <nav
         className={`nav nav-masthead-${modecontext.mode} justify-content-center float-md-end`}
         role="navigation"
@@ -65,7 +66,15 @@ function Header(props) {
         >
           {content.header.home}
         </Link>
-
+        <a
+          className={`nav-link-${modecontext.mode} fw-bold py-1 px-0`}
+          href="/cv/Bastien_CAMBRAY_CV.pdf"
+          target="_blank"
+          rel="noreferrer"
+          style={{ marginRight: "12px" }}
+        >
+          CV
+        </a>
         <a
           className="btn btn-sm btn-outline-secondary"
           onClick={ChangeLangage}

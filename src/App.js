@@ -37,7 +37,7 @@ function App() {
                   <Route path="*" element={<NoMatch />} />
                 </Routes>
               </div>
-              <Footer />
+              <Footer language={language} />
             </div>
           </div>
       </BrowserRouter>
