@@ -44,12 +44,22 @@ function Home(props) {
           <h3>{content.home.exp1Title}</h3>
           <p className="card-meta">{content.home.exp1Meta}</p>
           <p className="section-text">{content.home.exp1Text}</p>
+          <ul className="task-list">
+            {content.home.exp1Tasks.map((task, index) => (
+              <li key={index}>{task}</li>
+            ))}
+          </ul>
         </div>
 
         <div className={`info-card-${modecontext.mode}`}>
           <h3>{content.home.exp2Title}</h3>
           <p className="card-meta">{content.home.exp2Meta}</p>
           <p className="section-text">{content.home.exp2Text}</p>
+          <ul className="task-list">
+            {content.home.exp2Tasks.map((task, index) => (
+              <li key={index}>{task}</li>
+            ))}
+          </ul>
         </div>
 
         <div className={`info-card-${modecontext.mode}`}>
